@@ -26,7 +26,9 @@ namespace WindowsFormsApp3.Settings_files
                 UserModel.Login = login;
                 UserModel.Password = "";
                 UserModel.UserRole = "Admin";
-                UserModel.Access.setAccessWrite();
+                UserModel.Access.Write = true;
+                UserModel.Access.Read = true;
+                UserModel.Access.Delete = false;
                 Debug.WriteLine("Local Passport Status: OK");
                 return true;
             }

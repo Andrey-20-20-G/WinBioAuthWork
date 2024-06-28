@@ -83,7 +83,9 @@ namespace WindowsFormsApp3
             }
             else
             {
-                
+                MessageBox.Show("Технические неполадки со сканером. " +
+                    "Попробуйте данный вариант входа чуть позднее",
+                        "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }

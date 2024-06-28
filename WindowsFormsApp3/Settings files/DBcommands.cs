@@ -55,6 +55,7 @@ namespace WindowsFormsApp3.Settings_files
                 UserModel.Login = login;
                 UserModel.Password = pass;
                 UserModel.UserRole = "Employee";
+                UserModel.Access.Read = true;
 
                 Debug.WriteLine("App Passport Status: OK");
                 return true;

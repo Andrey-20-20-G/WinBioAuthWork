@@ -40,6 +40,9 @@ namespace WindowsFormsApp3
         private void log_out_button_Click(object sender, EventArgs e)
         {
             UserModel.EndSession();
+            UserModel.Access.Read = false;
+            UserModel.Access.Write = false;
+            UserModel.Access.Delete = false;
             this.Hide();
             var loginForm = new LoginForm();
             loginForm.Show();

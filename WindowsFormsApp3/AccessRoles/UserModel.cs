@@ -17,8 +17,8 @@ namespace WindowsFormsApp3.AccessRoles
         {
             Login = null;
             Password = null;
-            Access.setAccessWrite();
-            Access.setAccessDelete(UserRole);
+            /*Access.setAccessWrite(UserRole);
+            Access.setAccessDelete(UserRole);*/
             UserRole = null;
         }
     }
